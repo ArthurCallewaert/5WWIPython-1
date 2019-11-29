@@ -1,15 +1,19 @@
 t = int(input('Tijdstip: '))
-bereik = t+1
 
-afstand = 1
+afstand = 0
+stappen_voor = 0
+stappen_achter = 0
+for i in range(1, t+1):
+    if i%2 != 0:
+        stappen_voor += 2
+        afstand += stappen_voor
 
-for i in range(0, bereik):
-    if i%2 == 0:
-        afstand += 2
-
-    else:
-        afstand -= 1
+    elif i%2 == 0:
+        stappen_achter = (stappen_voor/2)
+        afstand -= stappen_achter
 
 
 
-print(afstand)
+
+uitvoer = '{:.0f}'
+print(uitvoer.format(afstand))
