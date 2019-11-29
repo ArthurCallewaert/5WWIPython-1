@@ -23,7 +23,9 @@ for i in range(aantal_basen):
 
 
 
-uitvoer = 'De DNA ketting bevat {} soorten basen: {} {}'
+
+
+uitvoer = 'De DNA-ketting bevat {} soorten basen: {} {}'
 
 
 
