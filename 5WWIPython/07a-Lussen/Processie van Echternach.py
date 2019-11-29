@@ -1,13 +1,15 @@
-from math import ceil
-
 t = int(input('Tijdstip: '))
+bereik = t+1
 
-bereik = ceil(t/2)
+afstand = 1
 
-if (t/2) = 0: #stap naar achter
-    pass
+for i in range(0, bereik):
+    if i%2 == 0:
+        afstand += 2
 
-else:
-    pass#stap naar voor
+    else:
+        afstand -= 1
 
-print(bereik)
+
+
+print(afstand)
