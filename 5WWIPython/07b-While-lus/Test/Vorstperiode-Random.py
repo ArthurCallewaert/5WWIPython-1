@@ -2,7 +2,7 @@ from random import randint
 
 max_periode = 0
 
-for i in range(100000000):
+for i in range(30):
     temp = randint(-10000, 3040)
     vorst_periode = 0
 
