@@ -1,12 +1,16 @@
-woord = input('Woord: ')
-bedrag = int(input('Bedrag: '))
+gevraagde_woord = input('Woord: ')
+totaal = 0
+
 gegokte_letters = ''
-geldsom = 0
-letter = input('Letter: ')
 
-while letter in woord and not letter in gegokte_letters:
+gedraaide_geldbedrag = int(input('Gedraaide geldbedrag: '))
+
+letter = input('Geef een letter: ')
+
+while letter in gevraagde_woord and not letter in gegokte_letters:
     gegokte_letters += letter
-    geldsom += bedrag
-    letter= input('Letter: ')
+    totaal += gedraaide_geldbedrag
 
-print(geldsom)
+    letter = input('Geef een letter: ')
+
+print(totaal)
