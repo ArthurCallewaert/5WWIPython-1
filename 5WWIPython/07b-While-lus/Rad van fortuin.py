@@ -14,3 +14,4 @@ while letter in gevraagde_woord and not letter in gegokte_letters:
     letter = input('Geef een letter: ')
 
 print(totaal)
+
